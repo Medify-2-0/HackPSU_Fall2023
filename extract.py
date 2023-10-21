@@ -1,24 +1,16 @@
-Certainly! You want to create a Python script to organize the dataset into training, validation, and testing sets with separate folders for "cancer" and "tumor". Each set should contain only `.jpg` files.
-
-Here's a Python script that uses the `os` and `shutil` libraries to organize the dataset as per your requirements:
-
-```python
 import os
 import shutil
 import random
 
 # Paths for the dataset
-base_path = "."  # Current directory
-data = [
-    # ... (your data here)
-]
+base_path = ""
+data = []
 
-# Ratio for splitting the data
+
 train_ratio = 0.7
 valid_ratio = 0.15
 test_ratio = 0.15
 
-# Create directories
 if not os.path.exists(os.path.join(base_path, 'train')):
     os.makedirs(os.path.join(base_path, 'train', 'tumor'))
     os.makedirs(os.path.join(base_path, 'train', 'cancer'))
@@ -31,10 +23,10 @@ if not os.path.exists(os.path.join(base_path, 'test')):
     os.makedirs(os.path.join(base_path, 'test', 'tumor'))
     os.makedirs(os.path.join(base_path, 'test', 'cancer'))
 
-# Shuffle the data
+
 random.shuffle(data)
 
-# Split the data into training, validation, and testing sets
+
 train_data = data[:int(len(data) * train_ratio)]
 valid_data = data[int(len(data) * train_ratio):int(len(data) * (train_ratio + valid_ratio))]
 test_data = data[int(len(data) * (train_ratio + valid_ratio)):]
