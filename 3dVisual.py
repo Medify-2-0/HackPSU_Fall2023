@@ -1,15 +1,15 @@
 import os
 import numpy as np
 import matplotlib.pyplot as plt
-from skimage import measure, morphology
-from mpl_toolkits.mplot3d.art3d import Poly3DCollection
-import imageio
+from PIL import Image  # Importing PIL from Pillow
 import scipy.ndimage
+from mpl_toolkits.mplot3d.art3d import Poly3DCollection
+from scipy.spatial import Delaunay
 
-# Some constants 
-
+# Some constants
 #################
-INPUT_FOLDER = '../Desktop/HackPSUFall23/brain_tumor_dataaset/yes'
+#Change input directory
+INPUT_FOLDER = 'testing_tumor/yes'
 #################
 
 patients = os.listdir(INPUT_FOLDER)
@@ -18,13 +18,16 @@ patients.sort()
 def load_images_from_folder(folder):
     images = []
     for filename in os.listdir(folder):
-        img = imageio.imread(os.path.join(folder, filename))
+        img = Image.open(os.path.join(folder, filename))
+        img = np.asarray(img)
+
+
         if img is not None:
             images.append(img)
     return images
 
 # Loading the first patient's scans
-first_patient_pixels = np.stack(load_images_from_folder(os.path.join(INPUT_FOLDER, patients[0])))
+first_patient_pixels = np.stack('testing_tumor/yes/Y71.JPG')
 
 # Show histogram
 plt.hist(first_patient_pixels.flatten(), bins=80, color='c')
@@ -33,7 +36,7 @@ plt.ylabel("Frequency")
 plt.show()
 
 # Show some slice in the middle
-plt.imshow(first_patient_pixels[80], cmap=plt.cm.gray)
+plt.imshow(first_patient_pixels[24], cmap=plt.cm.gray)
 plt.show()
 
 def resample(image, new_spacing=[1,1,1]):
@@ -51,17 +54,13 @@ print("Shape before resampling\t", first_patient_pixels.shape)
 print("Shape after resampling\t", pix_resampled.shape)
 
 def plot_3d(image, threshold=-300):
-    p = image.transpose(2,1,0)
-    verts, faces = measure.marching_cubes(p, threshold)
     fig = plt.figure(figsize=(10, 10))
     ax = fig.add_subplot(111, projection='3d')
-    mesh = Poly3DCollection(verts[faces], alpha=0.70)
-    face_color = [0.45, 0.45, 0.75]
-    mesh.set_facecolor(face_color)
-    ax.add_collection3d(mesh)
-    ax.set_xlim(0, p.shape[0])
-    ax.set_ylim(0, p.shape[1])
-    ax.set_zlim(0, p.shape[2])
-    plt.show()
-
-plot_3d(pix_resampled, 100)  # Adjusted threshold as HU isn't applicable for JPG
+   
+    verts = np.argwhere(image > threshold)
+    tri = Delaunay(verts)
+    ax.plot_trisurf(verts[:,0], verts[:,1], verts[:,2], triangles=tri.simplices, cmap='gray')
+   
+    ax.set_xlim(0, image.shape[0])
+    ax.set_ylim(0, image.shape[1])
+    ax.set_zlim
