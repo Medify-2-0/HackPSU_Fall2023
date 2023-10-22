@@ -3,6 +3,13 @@ from io import BytesIO
 import os
 from werkzeug.utils import secure_filename
 import secrets
+<<<<<<< Updated upstream
+=======
+import predict_tumor as pt
+import predict_alz as pa
+from keras.models import load_model
+import vtk
+>>>>>>> Stashed changes
 
 from time import sleep
 
@@ -61,9 +68,53 @@ def upload_file():
                 
 
                 print("uploaded")
+<<<<<<< Updated upstream
         return 'Files uploaded successfully!'
-    
+=======
+        return render_template("Tumor.html", statement=statement)
 
+@app.route('/Alzy.html', methods=['GET', 'POST'])
+def upload_file():
+    # if request.method == 'POST':
+    #     # check if the post request has the file part
+    #     if 'file' not in request.files:
+    #         flash('No file part')
+    #         return redirect(request.url)
+    #     file = request.files['file']
+    #     # If the user does not select a file, the browser submits an
+    #     # empty file without a filename.
+    #     if file.filename == '':
+    #         flash('No selected file')
+    #         return redirect(request.url)
+    #     if file and allowed_file(file.filename):
+    #         filename = secure_filename(file.filename)
+    #         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+    #         return redirect(url_for('download_file', name=filename))
+    #     else:
+    #         return redirect(request.url)
+    if request.method == 'POST':
+        data = request.files
+        files = data.getlist('files')
+        for file in files:
+            if file and allowed_file(file.filename):
+                filename = secure_filename(file.filename)
+                file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+                '''buffered = BytesIO()
+                file.save(buffered)
+                image_buffer = buffered.getvalue()'''
+                
+                statement=pa.predict(model_alz)
+                print(statement)
+                
+                os.remove(os.path.join("buffer/scratch", filename))
+
+                print("uploaded")
+        return render_template("Alzy.html", statement=statement)
+>>>>>>> Stashed changes
+    
+@app.route('/3DModel.html')
+def index():
+    image_path = generate_vtk
 
 @app.route('/uploads/<name>')
 def download_file(name):
