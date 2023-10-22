@@ -8,18 +8,18 @@ In a vast and diverse nation like India, where access to advanced medical traini
 
 <h2>Technology Stack</h2>
 
-<h3>Convolutional Neural Networks (CNN)</h3>: We leveraged the power of CNNs, which are a category of neural networks especially potent for tasks such as image recognition and classification. Given the visual nature of brain scans, CNNs were the natural choice for our project.
+<h3>Convolutional Neural Networks (CNN):</h3>We leveraged the power of CNNs, which are a category of neural networks especially potent for tasks such as image recognition and classification. Given the visual nature of brain scans, CNNs were the natural choice for our project.
 
-<h3>TensorFlow & Keras</h3>: Our model was implemented using TensorFlow, an end-to-end open-source platform for machine learning, in combination with Keras, a high-level neural networks API. These tools facilitated efficient model training, testing, and validation.
+<h3>TensorFlow & Keras:</h3>Our model was implemented using TensorFlow, an end-to-end open-source platform for machine learning, in combination with Keras, a high-level neural networks API. These tools facilitated efficient model training, testing, and validation.
 
-<h3>VTK & Matplotlib</h3>: For a comprehensive understanding of the brain scans and the presence of tumors, we integrated 3D plotting capabilities into our solution. We used VTK (The Visualization Toolkit) along with matplotlib.pyplot to create insightful visualizations, allowing medical professionals to better comprehend the nature and location of detected tumors.
+<h3>VTK & Matplotlib:</h3>For a comprehensive understanding of the brain scans and the presence of tumors, we integrated 3D plotting capabilities into our solution. We used VTK (The Visualization Toolkit) along with matplotlib.pyplot to create insightful visualizations, allowing medical professionals to better comprehend the nature and location of detected tumors.
 
-<h3>Flask</h3>: Serving as our Python framework, Flask seamlessly used in conjunction with HTML and CSS, presenting our project in an interactive and user-friendly manner. Its flexibility and simplicity ensured smooth deployment and integration of our brain tumor detection model with the web interface.
+<h3>Flask:</h3>Serving as our Python framework, Flask seamlessly used in conjunction with HTML and CSS, presenting our project in an interactive and user-friendly manner. Its flexibility and simplicity ensured smooth deployment and integration of our brain tumor detection model with the web interface.
 
-<h2>Dataset</h2>
+<h2>Dataset:</h2>
 Our team utilized a dataset sourced from Kaggle, a reputable platform known for hosting diverse datasets for machine learning and data analysis projects. The dataset contained labeled brain scans, which proved invaluable for training our model and validating its performance. You can access the dataset <a href=”https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection”>here</a>
 
-Conclusion
+<h2>Conclusion</h2>
 Harnessing the power of deep learning and the capabilities of visualization tools, our project stands as a testament to how technology can contribute significantly to the medical field. With an accuracy rate of 94%, our brain tumor detection model has the potential to aid medical professionals in diagnosing conditions early and accurately.
 
 Datasets:
