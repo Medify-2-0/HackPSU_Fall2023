@@ -122,13 +122,13 @@ def upload_file_a():
     
 @app.route('/3DModel.html')
 def index():
-    image_path=generate_vtk_image("path")
+    image_path=generate_vtk_image("/Users/ishaan/Desktop/CTscanDataset")
     return render_template('index.html', image_path=image_path)
 
 def generate_vtk_image(path):
     slices = td.load_scan(path)
     vol = td.slices_to_volume(slices)
-    img_data= td.numpy_to_vtk(vol)
+    img_data = td.numpy_to_vtk(vol)
 
     return td.volume_rendering(slices)
 

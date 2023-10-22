@@ -50,13 +50,11 @@
 		<span>Click the </span><span style="color:rgba(255,91,4,1);">Upload</span><span> button below.<br/>Select your CT scan file in </span><span style="color:rgba(255,91,4,1);">DICOM </span><span>format from your device<br/>Ensure the file is of the highest quality and contains the relevant imaging data.<br/>Click 'Upload' to submit your scan for analysis.</span>
 	</div>
 
-	<svg class="Rectangle_12">
-		<rect id="Rectangle_12" rx="37" ry="37" x="0" y="0" width="391" height="74">
-		</rect>
-	</svg>
-
-	<div id="UPLOAD">
-		<span>UPLOAD</span>
+	<div class="Rectangle_12">
+		<form method=post enctype=multipart/form-data>
+        <input type=file name=files multiple>
+        <input type=submit value=Upload>
+    </form>
 	</div>
 
 	<div id="Group_8">
