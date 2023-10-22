@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8" />
     <title>Medify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
 </head>
+
 <body>
-    <h1>This is the web app for Medify</h1>
-    <div>
-        <input id="upload" type="file" name="image">
-        <label id="upload-label" for="upload"></label>
-        <div>
-            <label for="upload"> <i></i><small>Choose file</small></label>
-        </div>
-    </div>
+    <form method=post enctype=multipart/form-data>
+        <input type=file name=files multiple>
+        <input type=submit value=Upload>
+      </form>
+
+      {% with messages = get_flashed_messages() %}
+{% if messages %}
+<ul class="flash-messages">
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
 </body>
 </html>
