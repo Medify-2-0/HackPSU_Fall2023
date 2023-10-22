@@ -26,8 +26,8 @@ def volume_rendering(slices):
     
     # Create a color transfer function
     color_func = vtk.vtkColorTransferFunction()
-    color_func.AddRGBPoint(10, 1.0, 0.0, 0.0)   # Low intensity
-    color_func.AddRGBPoint(500, 1.0, 1.0, 1.0)  # High intensity
+    color_func.AddRGBPoint(10, 1.0, 0.356, 0.047)   # Low intensity
+    color_func.AddRGBPoint(500, 0, 0.15, 0.21)  # High intensity
 
     # Create an opacity transfer function
     opacity_func = vtk.vtkPiecewiseFunction()
