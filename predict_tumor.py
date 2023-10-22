@@ -26,3 +26,4 @@ elif index==1 and f"{predict*100:.2f}"=="100.00":
 else:
     print(f"{predict*100:.2f}%", "of having tumor")
 
+print(img)
