@@ -21,6 +21,9 @@ app.secret_key = secrets.token_hex(16)
 def home():
     return render_template("Home.html")
 
+@app.route('/Tumor.html')
+def tumor():
+    return render_template("Tumor.html")
 
 def allowed_file(filename):
     return '.' in filename and \
