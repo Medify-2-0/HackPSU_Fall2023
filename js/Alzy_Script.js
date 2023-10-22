@@ -1,10 +1,10 @@
 const button_rectangle = document.getElementById("Rectangle_12");
 const upload_text = document.getElementById("UPLOAD");
-
+alert("Please select a file");
 const fileInput = document.getElementById("fileInput");
 
 button_rectangle.addEventListener("click", function () {
-  fileInput.click(); // Trigger the file input when the button is clicked
+  fileInput.click();
 });
 
 fileInput.addEventListener("change", function () {

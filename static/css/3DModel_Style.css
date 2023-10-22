@@ -1,11 +1,11 @@
 .mediaViewInfo {
-	--web-view-name: Home;
-	--web-view-id: Home;
+	--web-view-name: 3d mODEL;
+	--web-view-id: n_d_mODEL;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
 }
 :root {
-	--web-view-ids: Home;
+	--web-view-ids: n_d_mODEL;
 }
 * {
 	margin: 0;
@@ -13,92 +13,34 @@
 	box-sizing: border-box;
 	border: none;
 }
-#Home {
+#n_d_mODEL {
 	position: absolute;
-	width: 1377px;
+	width: 1400px;
 	height: 860.625px;
 	background-color: rgba(255,255,255,1);
 	overflow: hidden;
-	--web-view-name: Home;
-	--web-view-id: Home;
+	--web-view-name: 3d mODEL;
+	--web-view-id: n_d_mODEL;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
 }
 #Rectangle_1 {
-	fill: rgba(13,80,86,1);
+	fill: rgba(7,80,86,1);
 }
 .Rectangle_1 {
 	position: absolute;
 	overflow: visible;
-	width: 1377px;
+	width: 1400px;
 	height: 861px;
 	left: 0px;
 	top: 0px;
 }
-#Group_7 {
-	position: absolute;
-	width: 1304px;
-	height: 356px;
-	left: 37px;
-	top: 463px;
-	overflow: visible;
-}
-#Group_6 {
-	position: absolute;
-	width: 1304px;
-	height: 356px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-#Rectangle_3 {
-	fill: rgba(243,243,243,1);
-}
-.Rectangle_3 {
-	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.431));
-	position: absolute;
-	overflow: visible;
-	width: 1322px;
-	height: 374px;
-	left: 0px;
-	top: 0px;
-}
-#ABOUT_US_ {
-	left: 26px;
-	top: 21px;
-	position: absolute;
-	overflow: hidden;
-	width: 810px;
-	height: 78px;
-	text-align: left;
-	font-family: Bebas Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 70px;
-	color: rgba(255,91,4,1);
-	letter-spacing: -0.1px;
-}
-#Nebula_is_a_software_that_does {
-	left: 26px;
-	top: 99px;
-	position: absolute;
-	overflow: hidden;
-	width: 1239px;
-	height: 249px;
-	text-align: left;
-	font-family: Bebas Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 37px;
-	color: rgba(0,0,0,1);
-	letter-spacing: 0.2px;
-}
 #Group_8 {
 	position: absolute;
-	width: 817px;
-	height: 100px;
+	width: 1061px;
+	height: 116px;
 	left: 280px;
-	top: 32px;
+	top: 24px;
 	overflow: visible;
 }
 #Group_5 {
@@ -106,7 +48,7 @@
 	width: 817px;
 	height: 100px;
 	left: 0px;
-	top: 0px;
+	top: 8px;
 	overflow: visible;
 }
 #Rectangle_12 {
@@ -217,27 +159,46 @@
 #logo {
 	filter: drop-shadow(6px 8px 8px rgba(0, 0, 0, 0.522));
 	position: absolute;
-	width: 260px;
-	height: 260px;
-	left: 37px;
-	top: 170px;
+	width: 116px;
+	height: 116px;
+	left: 945px;
+	top: 0px;
 	overflow: visible;
 }
-#NEBULA {
-	filter: drop-shadow(8px 6px 0px rgba(0, 0, 0, 0.612));
-	left: 386px;
-	top: 179px;
+#Rectangle_23 {
+	fill: rgba(243,243,243,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_23 {
 	position: absolute;
 	overflow: visible;
-	width: 956px;
-	height: 251px;
-	text-align: left;
-	font-family: Constantia;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 200px;
-	color: rgba(254,155,82,1);
-	letter-spacing: -0.1px;
+	width: 693px;
+	height: 662px;
+	left: 342px;
+	top: 178px;
+}
+#Rectangle_24 {
+	fill: rgba(243,243,243,1);
+	stroke: rgba(0,39,54,1);
+	stroke-width: 10px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_24 {
+	filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 699px;
+	height: 668px;
+	left: 342px;
+	top: 178px;
 }
 
 .customlink {
