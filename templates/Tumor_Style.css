@@ -1,0 +1,251 @@
+.mediaViewInfo {
+  --web-view-name: Tumor;
+  --web-view-id: Tumor;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+:root {
+  --web-view-ids: Tumor;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+#Tumor {
+  position: absolute;
+  width: 1377px;
+  height: 860.625px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  --web-view-name: Tumor;
+  --web-view-id: Tumor;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+#Rectangle_1 {
+  fill: rgba(7, 80, 86, 1);
+}
+.Rectangle_1 {
+  position: absolute;
+  overflow: visible;
+  width: 1377px;
+  height: 861px;
+  left: 0px;
+  top: 0px;
+}
+#Rectangle_3 {
+  fill: rgba(243, 243, 243, 1);
+}
+.Rectangle_3 {
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.431));
+  position: absolute;
+  overflow: visible;
+  width: 1322px;
+  height: 255px;
+  left: 37px;
+  top: 171px;
+}
+#Rectangle_4 {
+  fill: rgba(243, 243, 243, 1);
+}
+.Rectangle_4 {
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.431));
+  position: absolute;
+  overflow: visible;
+  width: 745px;
+  height: 277px;
+  left: 614px;
+  top: 458px;
+}
+#GOAL_WITH_THE_PROJECT {
+  left: 58px;
+  top: 187px;
+  position: absolute;
+  overflow: visible;
+  width: 810px;
+  height: 89px;
+  text-align: left;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 74px;
+  color: rgba(255, 91, 4, 1);
+  letter-spacing: -0.1px;
+}
+#Our_project_seeks_to_enhance_m {
+  left: 58px;
+  top: 280px;
+  position: absolute;
+  overflow: visible;
+  width: 1264px;
+  height: 108px;
+  text-align: left;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: -0.1px;
+}
+#Group_3 {
+  position: absolute;
+  width: 337.617px;
+  height: 373.869px;
+  left: 109px;
+  top: 448.355px;
+  overflow: visible;
+}
+#Rectangle_5 {
+  fill: rgba(34, 47, 56, 1);
+}
+.Rectangle_5 {
+  position: absolute;
+  overflow: visible;
+  width: 53.269px;
+  height: 193.533px;
+  left: 84.07px;
+  top: 180.336px;
+}
+#Group_2 {
+  position: absolute;
+  width: 337.617px;
+  height: 373.869px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Group_1 {
+  position: absolute;
+  width: 337.617px;
+  height: 373.869px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Click_the_Upload_button_below_ {
+  left: 640px;
+  top: 475px;
+  position: absolute;
+  overflow: visible;
+  width: 692px;
+  height: 215px;
+  text-align: left;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 37px;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: -0.1px;
+}
+#Rectangle_12 {
+  fill: white;
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Rectangle_12 {
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.58));
+  position: absolute;
+  overflow: visible;
+  width: 409px;
+  height: 92px;
+  left: 782px;
+  top: 765px;
+  cursor: pointer;
+  transition: fill 5s ease-in-out 2s;
+}
+
+
+#Rectangle_12:hover {
+  fill: rgba(255, 91, 12, 1);
+}
+#UPLOAD {
+  left: 817px;
+  top: 774px;
+  position: absolute;
+  overflow: hidden;
+  width: 323px;
+  height: 57px;
+  text-align: center;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  /* color: rgba(255, 255, 255, 1); */
+  letter-spacing: -0.1px;
+  pointer-events: none;
+}
+#Group_5 {
+  position: absolute;
+  width: 315px;
+  height: 98px;
+  left: 531px;
+  top: 25px;
+  overflow: visible;
+}
+#Rectangle_12_u {
+  fill: rgba(0, 34, 51, 1);
+}
+.Rectangle_12_u {
+  filter: drop-shadow(0px 5px 5px rgba(0, 39, 54, 0.969));
+  position: absolute;
+  overflow: visible;
+  width: 330px;
+  height: 113px;
+  left: 0px;
+  top: 0px;
+}
+#HOME_ {
+  left: 37px;
+  top: 19px;
+  position: absolute;
+  overflow: visible;
+  width: 98px;
+  height: 60px;
+  text-align: right;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: -0.1px;
+}
+#TUMOR {
+  left: 170px;
+  top: 19px;
+  position: absolute;
+  overflow: visible;
+  width: 109px;
+  height: 60px;
+  text-align: left;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: -0.1px;
+}
+#Rectangle_14 {
+  fill: rgba(255, 255, 255, 1);
+}
+.Rectangle_14 {
+  position: absolute;
+  overflow: visible;
+  width: 5px;
+  height: 48px;
+  left: 150px;
+  top: 25px;
+}
+
+.customlink {
+      text-decoration: none; /* Remove underline */
+      color: white; /* Set your desired link color */
+    }
+
+.customlink:hover {
+      color: rgba(255,91,4,1);; /* Increase the size by a factor of 1.2 */
+    }

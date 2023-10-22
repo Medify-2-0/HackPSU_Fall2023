@@ -1,0 +1,150 @@
+.mediaViewInfo {
+	--web-view-name: Home;
+	--web-view-id: Home;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Home;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Home {
+	position: absolute;
+	width: 1377px;
+	height: 860.625px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Home;
+	--web-view-id: Home;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#Rectangle_1 {
+	fill: rgba(13,80,86,1);
+}
+.Rectangle_1 {
+	position: absolute;
+	overflow: visible;
+	width: 1377px;
+	height: 861px;
+	left: 0px;
+	top: 0px;
+}
+#Rectangle_3 {
+	fill: rgba(243,243,243,1);
+}
+.Rectangle_3 {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.431));
+	position: absolute;
+	overflow: visible;
+	width: 1322px;
+	height: 255px;
+	left: 37px;
+	top: 169px;
+}
+#ABOUT_US_SOMETHING {
+	left: 80px;
+	top: 183px;
+	position: absolute;
+	overflow: hidden;
+	width: 810px;
+	height: 78px;
+	text-align: left;
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 70px;
+	color: rgba(255,91,4,1);
+	letter-spacing: -0.1px;
+}
+#LOL_I_AM_CLUELESS_ {
+	left: 80px;
+	top: 261px;
+	position: absolute;
+	overflow: visible;
+	width: 1214px;
+	height: 128px;
+	text-align: left;
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.1px;
+}
+#Group_4 {
+	position: absolute;
+	width: 315px;
+	height: 98px;
+	left: 537px;
+	top: 25px;
+	overflow: visible;
+}
+#Rectangle_12 {
+	fill: rgba(0,34,51,1);
+}
+.Rectangle_12 {
+	filter: drop-shadow(0px 5px 5px rgba(0, 39, 54, 0.969));
+	position: absolute;
+	overflow: visible;
+	width: 330px;
+	height: 113px;
+	left: 0px;
+	top: 0px;
+}
+#HOME_ {
+	left: 37px;
+	top: 19px;
+	position: absolute;
+	overflow: visible;
+	width: 98px;
+	height: 60px;
+	text-align: right;
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	color: rgba(255,255,255,1);
+	letter-spacing: -0.1px;
+}
+#TUMOR {
+	left: 170px;
+	top: 19px;
+	position: absolute;
+	overflow: visible;
+	width: 109px;
+	height: 60px;
+	text-align: left;
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	color: rgba(255,255,255,1);
+	letter-spacing: -0.1px;
+}
+#Rectangle_14 {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_14 {
+	position: absolute;
+	overflow: visible;
+	width: 5px;
+	height: 48px;
+	left: 150px;
+	top: 25px;
+}
+
+
+.customlink {
+      text-decoration: none; /* Remove underline */
+      color: white; /* Set your desired link color */
+    }
+
+.customlink:hover {
+      color: rgba(255,91,4,1);; /* Increase the size by a factor of 1.2 */
+    }

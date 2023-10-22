@@ -6,7 +6,7 @@ ALLOWED_EXTENSIONS = {'jpg', 'jpeg'}
 
 @app.route('/')
 def home():
-    return render_template("index.html")
+    return render_template("Home.html")
 
 def allowed_file(filename):
     return '.' in filename and \
