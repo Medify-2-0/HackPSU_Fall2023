@@ -1,3 +1,4 @@
+
 from flask import Flask, render_template, request, flash, redirect, url_for, send_from_directory
 from io import BytesIO
 import os
@@ -6,6 +7,8 @@ import secrets
 import predict_tumor as pt
 import predict_alz as pa
 from keras.models import load_model
+import vtk
+import tdModel_Volume as td
 
 from time import sleep
 
@@ -117,7 +120,17 @@ def upload_file_a():
                 print("uploaded")
         return render_template("Alzy.html", statement=statement)
     
+@app.route('/3DModel.html')
+def index():
+    image_path=generate_vtk_image("path")
+    return render_template('index.html', image_path=image_path)
 
+def generate_vtk_image(path):
+    slices = td.load_scan(path)
+    vol = td.slices_to_volume(slices)
+    img_data= td.numpy_to_vtk(vol)
+
+    return td.volume_rendering(slices)
 
 @app.route('/uploads/<name>')
 def download_file(name):
