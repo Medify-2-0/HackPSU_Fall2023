@@ -18,10 +18,8 @@ In a vast and diverse nation like India, where access to advanced medical traini
 
 <h2>Dataset:</h2>
 Our team utilized a dataset sourced from Kaggle, a reputable platform known for hosting diverse datasets for machine learning and data analysis projects. The dataset contained labeled brain scans, which proved invaluable for training our model and validating its performance. You can access the dataset <a href=”https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection”>here</a>
+1) https://www.kaggle.com/datasets/yasserhessein/dataset-alzheimer/data
+2) https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection
 
 <h2>Conclusion</h2>
 Harnessing the power of deep learning and the capabilities of visualization tools, our project stands as a testament to how technology can contribute significantly to the medical field. With an accuracy rate of 94%, our brain tumor detection model has the potential to aid medical professionals in diagnosing conditions early and accurately.
-
-Datasets:
-1) https://www.kaggle.com/datasets/yasserhessein/dataset-alzheimer/data
-2) https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection
