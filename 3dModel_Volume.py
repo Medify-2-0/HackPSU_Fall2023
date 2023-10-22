@@ -1,4 +1,4 @@
-import os
+'''import os
 import pydicom
 import vtk
 from vtk.util import numpy_support
@@ -67,3 +67,4 @@ if __name__ == "__main__":
     path = r"/Users/aviralbansal/Desktop/test/CTscanDataset" 
     slices = load_scan(path)
     volume_rendering(slices)
+'''

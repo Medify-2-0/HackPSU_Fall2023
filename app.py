@@ -7,8 +7,7 @@ import secrets
 import predict_tumor as pt
 import predict_alz as pa
 from keras.models import load_model
-import vtk
-import tdModel_Volume as td
+#import tdModel_Volume as td
 
 from time import sleep
 
@@ -75,12 +74,11 @@ def upload_file_t():
                 image_buffer = buffered.getvalue()'''
                 
                 statement=pt.predict(model_tumor)
-                print(statement)
+                print(statement[0]+statement[1])
                 
                 os.remove(os.path.join("buffer/scratch", filename))
 
-                print("uploaded")
-        return render_template("Tumor.html", statement=statement)
+        return statement[0]+" "+statement[1]
 
 @app.route('/Alzy.html', methods=['GET', 'POST'])
 def upload_file_a():
@@ -117,8 +115,7 @@ def upload_file_a():
                 
                 os.remove(os.path.join("buffer/scratch", filename))
 
-                print("uploaded")
-        return render_template("Alzy.html", statement=statement)
+        return statement
     
 @app.route('/3DModel.html')
 def index():

@@ -53,7 +53,7 @@
 	<div class="Rectangle_12">
 		<form method=post enctype=multipart/form-data>
         <input type=file name=files multiple>
-        <input type=submit value=Upload>
+        <button onclick="myFunction()"></button><input type=submit value=Upload></button>
     </form>
 	</div>
 
@@ -97,7 +97,22 @@
 
 </div>
 
+<div id="messageBox" class="hidden">
+	<div id="messageContent">
+		<p>This is your web message.</p>
+		<button id="closeMessageButton">Close</button>
+	</div>
+	<h3 color="Red">{{statements}}</h3>
+</div>
+
 <script id="applicationScript" type="text/javascript" src="../js/Tumor_Script.js"></script>
+
+
+<script>
+function myFunction() {
+  alert("I am an alert box!");
+}
+</script>
 
 </body>
 </html>
