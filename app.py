@@ -3,15 +3,19 @@ from io import BytesIO
 import os
 from werkzeug.utils import secure_filename
 import secrets
+import predict_tumor as pt
+import predict_alz as pa
+from keras.models import load_model
 
 from time import sleep
 
-
+model_tumor = load_model('tumor.h5')
+model_alz = load_model('alzeihmers.h5')
 
 app = Flask(__name__)
 
-ALLOWED_EXTENSIONS = {'jpg', 'jpeg'}
-UPLOAD_FOLDER = 'uploads'
+ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'DICOM'}
+UPLOAD_FOLDER = 'buffer/scratch'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 app.secret_key = secrets.token_hex(16)
@@ -25,12 +29,20 @@ def home():
 def tumor():
     return render_template("Tumor.html")
 
+@app.route('/Alzy.html')
+def alzeihmer():
+    return render_template("Alzy.html")
+
+@app.route('/3DModel.html')
+def dmodel():
+    return render_template("3DModel.html")
+
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-@app.route('/', methods=['GET', 'POST'])
-def upload_file():
+@app.route('/Tumor.html', methods=['GET', 'POST'])
+def upload_file_t():
     # if request.method == 'POST':
     #     # check if the post request has the file part
     #     if 'file' not in request.files:
@@ -49,19 +61,61 @@ def upload_file():
     #     else:
     #         return redirect(request.url)
     if request.method == 'POST':
-        files = request.files.getlist('files')
+        data = request.files
+        files = data.getlist('files')
         for file in files:
             if file and allowed_file(file.filename):
                 filename = secure_filename(file.filename)
-                #file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-                buffered = BytesIO()
+                file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+                '''buffered = BytesIO()
                 file.save(buffered)
-                image_buffer = buffered.getvalue()
-                print(image_buffer)
+                image_buffer = buffered.getvalue()'''
                 
+                statement=pt.predict(model_tumor)
+                print(statement)
+                
+                os.remove(os.path.join("buffer/scratch", filename))
 
                 print("uploaded")
-        return 'Files uploaded successfully!'
+        return render_template("Tumor.html", statement=statement)
+
+@app.route('/Alzy.html', methods=['GET', 'POST'])
+def upload_file_a():
+    # if request.method == 'POST':
+    #     # check if the post request has the file part
+    #     if 'file' not in request.files:
+    #         flash('No file part')
+    #         return redirect(request.url)
+    #     file = request.files['file']
+    #     # If the user does not select a file, the browser submits an
+    #     # empty file without a filename.
+    #     if file.filename == '':
+    #         flash('No selected file')
+    #         return redirect(request.url)
+    #     if file and allowed_file(file.filename):
+    #         filename = secure_filename(file.filename)
+    #         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+    #         return redirect(url_for('download_file', name=filename))
+    #     else:
+    #         return redirect(request.url)
+    if request.method == 'POST':
+        data = request.files
+        files = data.getlist('files')
+        for file in files:
+            if file and allowed_file(file.filename):
+                filename = secure_filename(file.filename)
+                file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+                '''buffered = BytesIO()
+                file.save(buffered)
+                image_buffer = buffered.getvalue()'''
+                
+                statement=pa.predict(model_alz)
+                print(statement)
+                
+                os.remove(os.path.join("buffer/scratch", filename))
+
+                print("uploaded")
+        return render_template("Alzy.html", statement=statement)
     
 
 

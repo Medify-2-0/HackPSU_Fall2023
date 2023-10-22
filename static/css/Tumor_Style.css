@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 .mediaViewInfo {
   --web-view-name: Tumor;
   --web-view-id: Tumor;
@@ -17,7 +15,7 @@
 }
 #Tumor {
   position: absolute;
-  width: 1377px;
+  width: 1400px;
   height: 860.625px;
   background-color: rgba(255, 255, 255, 1);
   overflow: hidden;
@@ -31,7 +29,7 @@
 }
 .Rectangle_1 {
   position: absolute;
-  overflow: visible;
+  /* overflow: visible; */
   width: 1377px;
   height: 861px;
   left: 0px;
@@ -93,8 +91,8 @@
 }
 #Group_3 {
   position: absolute;
-  width: 337.617px;
-  height: 373.869px;
+  width: 340px;
+  height: 376.507px;
   left: 109px;
   top: 448.355px;
   overflow: visible;
@@ -107,27 +105,27 @@
   overflow: visible;
   width: 53.269px;
   height: 193.533px;
-  left: 84.07px;
-  top: 180.336px;
+  left: 84.775px;
+  top: 182.975px;
 }
 #Group_2 {
   position: absolute;
-  width: 337.617px;
-  height: 373.869px;
+  width: 340px;
+  height: 376.507px;
   left: 0px;
   top: 0px;
   overflow: visible;
 }
 #Group_1 {
   position: absolute;
-  width: 337.617px;
-  height: 373.869px;
+  width: 340px;
+  height: 376.507px;
   left: 0px;
   top: 0px;
   overflow: visible;
 }
 #Click_the_Upload_button_below_ {
-  left: 640px;
+  left: 633px;
   top: 475px;
   position: absolute;
   overflow: visible;
@@ -157,14 +155,12 @@
   height: 92px;
   left: 782px;
   top: 765px;
-  cursor: pointer;
-  transition: fill 5s ease-in-out 2s;
 }
-
 
 #Rectangle_12:hover {
   fill: rgba(255, 91, 12, 1);
 }
+
 #UPLOAD {
   left: 817px;
   top: 774px;
@@ -177,33 +173,42 @@
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
-  /* color: rgba(255, 255, 255, 1); */
+  color: black;
   letter-spacing: -0.1px;
   pointer-events: none;
 }
-#Group_5 {
+
+#Group_8 {
   position: absolute;
-  width: 315px;
-  height: 98px;
-  left: 531px;
-  top: 25px;
+  width: 1061px;
+  height: 116px;
+  left: 280px;
+  top: 24px;
   overflow: visible;
 }
-#Rectangle_12_u {
+#Group_5 {
+  position: absolute;
+  width: 817px;
+  height: 100px;
+  left: 0px;
+  top: 8px;
+  overflow: visible;
+}
+#Rectangle_12_x {
   fill: rgba(0, 34, 51, 1);
 }
-.Rectangle_12_u {
+.Rectangle_12_x {
   filter: drop-shadow(0px 5px 5px rgba(0, 39, 54, 0.969));
   position: absolute;
   overflow: visible;
-  width: 330px;
-  height: 113px;
+  width: 832px;
+  height: 115px;
   left: 0px;
   top: 0px;
 }
 #HOME_ {
-  left: 37px;
-  top: 19px;
+  left: 32px;
+  top: 20px;
   position: absolute;
   overflow: visible;
   width: 98px;
@@ -217,8 +222,8 @@
   letter-spacing: -0.1px;
 }
 #TUMOR {
-  left: 170px;
-  top: 19px;
+  left: 192px;
+  top: 20px;
   position: absolute;
   overflow: visible;
   width: 109px;
@@ -239,15 +244,76 @@
   overflow: visible;
   width: 5px;
   height: 48px;
-  left: 150px;
-  top: 25px;
+  left: 160px;
+  top: 26px;
+}
+#ALZHEIMER {
+  left: 374px;
+  top: 20px;
+  position: absolute;
+  overflow: visible;
+  width: 172px;
+  height: 60px;
+  text-align: left;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: -0.1px;
+}
+#Rectangle_15 {
+  fill: rgba(255, 255, 255, 1);
+}
+.Rectangle_15 {
+  position: absolute;
+  overflow: visible;
+  width: 5px;
+  height: 48px;
+  left: 327px;
+  top: 26px;
+}
+#Rectangle_16 {
+  fill: rgba(255, 255, 255, 1);
+}
+.Rectangle_16 {
+  position: absolute;
+  overflow: visible;
+  width: 5px;
+  height: 48px;
+  left: 586px;
+  top: 26px;
+}
+#n_D_MODEL {
+  left: 626px;
+  top: 20px;
+  position: absolute;
+  overflow: visible;
+  width: 172px;
+  height: 60px;
+  text-align: left;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: -0.1px;
+}
+#logo {
+  filter: drop-shadow(6px 8px 8px rgba(0, 0, 0, 0.522));
+  position: absolute;
+  width: 116px;
+  height: 116px;
+  left: 945px;
+  top: 0px;
+  overflow: visible;
 }
 
 .customlink {
-      text-decoration: none; /* Remove underline */
-      color: white; /* Set your desired link color */
-    }
+  text-decoration: none; /* Remove underline */
+  color: white; /* Set your desired link color */
+}
 
 .customlink:hover {
-      color: rgba(255,91,4,1);; /* Increase the size by a factor of 1.2 */
-    }
+  color: rgba(255, 91, 4, 1); /* Increase the size by a factor of 1.2 */
+}

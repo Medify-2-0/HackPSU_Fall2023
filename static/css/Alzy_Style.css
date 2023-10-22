@@ -1,11 +1,11 @@
 .mediaViewInfo {
-  --web-view-name: Tumor;
-  --web-view-id: Tumor;
+  --web-view-name: ALzy;
+  --web-view-id: ALzy;
   --web-scale-on-resize: true;
   --web-enable-deep-linking: true;
 }
 :root {
-  --web-view-ids: Tumor;
+  --web-view-ids: ALzy;
 }
 * {
   margin: 0;
@@ -13,14 +13,14 @@
   box-sizing: border-box;
   border: none;
 }
-#Tumor {
+#ALzy {
   position: absolute;
   width: 1377px;
   height: 860.625px;
   background-color: rgba(255, 255, 255, 1);
   overflow: hidden;
-  --web-view-name: Tumor;
-  --web-view-id: Tumor;
+  --web-view-name: ALzy;
+  --web-view-id: ALzy;
   --web-scale-on-resize: true;
   --web-enable-deep-linking: true;
 }
@@ -46,18 +46,6 @@
   height: 255px;
   left: 37px;
   top: 171px;
-}
-#Rectangle_4 {
-  fill: rgba(243, 243, 243, 1);
-}
-.Rectangle_4 {
-  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.431));
-  position: absolute;
-  overflow: visible;
-  width: 745px;
-  height: 277px;
-  left: 614px;
-  top: 458px;
 }
 #GOAL_WITH_THE_PROJECT {
   left: 58px;
@@ -89,44 +77,29 @@
   color: rgba(0, 0, 0, 1);
   letter-spacing: -0.1px;
 }
-#Group_3 {
+#Group_9 {
   position: absolute;
-  width: 337.617px;
-  height: 373.869px;
-  left: 109px;
-  top: 448.355px;
+  width: 727px;
+  height: 259px;
+  left: 37px;
+  top: 458px;
   overflow: visible;
 }
-#Rectangle_5 {
-  fill: rgba(34, 47, 56, 1);
+#Rectangle_4 {
+  fill: rgba(243, 243, 243, 1);
 }
-.Rectangle_5 {
+.Rectangle_4 {
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.431));
   position: absolute;
   overflow: visible;
-  width: 53.269px;
-  height: 193.533px;
-  left: 84.07px;
-  top: 180.336px;
-}
-#Group_2 {
-  position: absolute;
-  width: 337.617px;
-  height: 373.869px;
+  width: 745px;
+  height: 277px;
   left: 0px;
   top: 0px;
-  overflow: visible;
-}
-#Group_1 {
-  position: absolute;
-  width: 337.617px;
-  height: 373.869px;
-  left: 0px;
-  top: 0px;
-  overflow: visible;
 }
 #Click_the_Upload_button_below_ {
-  left: 640px;
-  top: 475px;
+  left: 19px;
+  top: 15px;
   position: absolute;
   overflow: visible;
   width: 692px;
@@ -135,9 +108,25 @@
   font-family: Bebas Neue;
   font-style: normal;
   font-weight: bold;
-  font-size: 37px;
+  font-size: 32px;
   color: rgba(0, 0, 0, 1);
   letter-spacing: -0.1px;
+}
+#Group_14 {
+  position: absolute;
+  width: 391px;
+  height: 74px;
+  left: 205px;
+  top: 765px;
+  overflow: visible;
+}
+#Group_13 {
+  position: absolute;
+  width: 391px;
+  height: 74px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 #Rectangle_12 {
   fill: white;
@@ -153,19 +142,17 @@
   overflow: visible;
   width: 409px;
   height: 92px;
-  left: 782px;
-  top: 765px;
-  cursor: pointer;
-  transition: fill 5s ease-in-out 2s;
+  left: 0px;
+  top: 0px;
 }
-
 
 #Rectangle_12:hover {
   fill: rgba(255, 91, 12, 1);
 }
+
 #UPLOAD {
-  left: 817px;
-  top: 774px;
+  left: 35px;
+  top: 9px;
   position: absolute;
   overflow: hidden;
   width: 323px;
@@ -175,33 +162,42 @@
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
-  /* color: rgba(255, 255, 255, 1); */
+  color: black;
   letter-spacing: -0.1px;
   pointer-events: none;
+} 
+#Group_8 {
+  position: absolute;
+  width: 1061px;
+  height: 116px;
+  left: 280px;
+  top: 24px;
+  overflow: visible;
 }
 #Group_5 {
   position: absolute;
-  width: 315px;
-  height: 98px;
-  left: 531px;
-  top: 25px;
+  width: 817px;
+  height: 100px;
+  left: 0px;
+  top: 8px;
   overflow: visible;
 }
-#Rectangle_12_u {
+#Rectangle_12_w {
   fill: rgba(0, 34, 51, 1);
 }
-.Rectangle_12_u {
+.Rectangle_12_w {
   filter: drop-shadow(0px 5px 5px rgba(0, 39, 54, 0.969));
   position: absolute;
   overflow: visible;
-  width: 330px;
-  height: 113px;
+  width: 832px;
+  height: 115px;
   left: 0px;
   top: 0px;
 }
+
 #HOME_ {
-  left: 37px;
-  top: 19px;
+  left: 32px;
+  top: 20px;
   position: absolute;
   overflow: visible;
   width: 98px;
@@ -215,8 +211,8 @@
   letter-spacing: -0.1px;
 }
 #TUMOR {
-  left: 170px;
-  top: 19px;
+  left: 192px;
+  top: 20px;
   position: absolute;
   overflow: visible;
   width: 109px;
@@ -237,15 +233,111 @@
   overflow: visible;
   width: 5px;
   height: 48px;
-  left: 150px;
-  top: 25px;
+  left: 160px;
+  top: 26px;
+}
+#ALZHEIMER {
+  left: 374px;
+  top: 20px;
+  position: absolute;
+  overflow: visible;
+  width: 172px;
+  height: 60px;
+  text-align: left;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: -0.1px;
+}
+#Rectangle_15 {
+  fill: rgba(255, 255, 255, 1);
+}
+.Rectangle_15 {
+  position: absolute;
+  overflow: visible;
+  width: 5px;
+  height: 48px;
+  left: 327px;
+  top: 26px;
+}
+#Rectangle_16 {
+  fill: rgba(255, 255, 255, 1);
+}
+.Rectangle_16 {
+  position: absolute;
+  overflow: visible;
+  width: 5px;
+  height: 48px;
+  left: 586px;
+  top: 26px;
+}
+#n_D_MODEL {
+  left: 626px;
+  top: 20px;
+  position: absolute;
+  overflow: visible;
+  width: 172px;
+  height: 60px;
+  text-align: left;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: -0.1px;
+}
+#logo {
+  filter: drop-shadow(6px 8px 8px rgba(0, 0, 0, 0.522));
+  position: absolute;
+  width: 116px;
+  height: 116px;
+  left: 945px;
+  top: 0px;
+  overflow: visible;
+}
+#Group_12 {
+  position: absolute;
+  width: 340px;
+  height: 376.507px;
+  left: 928px;
+  top: 430.313px;
+  overflow: visible;
+}
+#Rectangle_17 {
+  fill: rgba(34, 47, 56, 1);
+}
+.Rectangle_17 {
+  position: absolute;
+  overflow: visible;
+  width: 46.603px;
+  height: 169.313px;
+  left: 206.652px;
+  top: 207.194px;
+}
+#Group_11 {
+  position: absolute;
+  width: 340px;
+  height: 376.507px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Group_10 {
+  position: absolute;
+  width: 340px;
+  height: 376.507px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 
 .customlink {
-      text-decoration: none; /* Remove underline */
-      color: white; /* Set your desired link color */
-    }
+  text-decoration: none; 
+  color: white; 
+}
 
 .customlink:hover {
-      color: rgba(255,91,4,1);; /* Increase the size by a factor of 1.2 */
-    }
+  color: rgba(255, 91, 4, 1); 
+}
